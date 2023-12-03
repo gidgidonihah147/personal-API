@@ -20,6 +20,7 @@ it("Should get a login token",async ()=>{
     console.log("Token "+token);
     const status = response.status;
 
+    
     expect(status).toBe(200);
     expect(token.length).toBe(36);
 
