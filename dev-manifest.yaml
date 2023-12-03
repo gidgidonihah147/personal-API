@@ -11,32 +11,32 @@ spec:
     metadata:
       labels:
         app: tristin-api
-  spec:
-    containers:
-      - name: tristin-api
-        image: us-docker.pkg.dev/my-devops-team-404512/tristin-api/api-tests
-        ports:
-          - containerPort: 3000
-        resources:
-          limits:
-            cpu: ".5"
-            memory: "500Mi"
-          requests:
-            cpu: ".25"
-            memory: "250Mi"
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 3000
-            scheme: HTTP
-          failureThreshold: 1
-          periodSeconds: 10
-          timeoutSeconds: 10
-        startupProbe:
-          httpGet:
-            path: /
-            port: 3000
-            scheme: HTTP
-          failureThreshold: 30
-          periodSeconds: 10
-          timeoutSeconds: 10
+    spec:
+      containers:
+        - name: tristin-api
+          image: us-docker.pkg.dev/my-devops-team-404512/tristin-api/api-tests
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              cpu: ".5"
+              memory: "500Mi"
+            requests:
+              cpu: ".25"
+              memory: "250Mi"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 3000
+              scheme: HTTP
+            failureThreshold: 1
+            periodSeconds: 10
+            timeoutSeconds: 10
+          startupProbe:
+            httpGet:
+              path: /
+              port: 3000
+              scheme: HTTP
+            failureThreshold: 30
+            periodSeconds: 10
+            timeoutSeconds: 10
