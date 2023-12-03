@@ -6,6 +6,6 @@ const app = express();
 
 app.get('/', (req,res) => {res.send("Hello Browser")});
 
-app.get('/tristin', (req,res) => {res.send("Hello Tristin")});
+app.get('/Monigan', (req,res) => {res.send("Hello Monigan")});
 
 app.listen(port, ()=>console.log("Listening"));

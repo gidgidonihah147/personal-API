@@ -37,7 +37,15 @@ export default function Login( props ) {
   return(
       <View style={styles.container}>
           <Text>This is the Login Screen</Text>
+          <CustomButton  name="Ernest" onPress={()=> handlePress("Ernest") }/>
+          <CustomButton  name="Pius" onPress={()=> handlePress("Pius") }/>
+<<<<<<< HEAD
+      
+=======
+          <CustomButton  name="Monigan" onPress={()=> handlePress("Monigan") }/>
           <CustomButton  name="Tristin" onPress={()=> handlePress("Tristin") }/>
+          <CustomButton  name="Allison" onPress={()=> handlePress("Allison") }/>
+>>>>>>> 32b5e45be83a660aa686c5f808ac12f7118798fb
       </View>
 
   );
