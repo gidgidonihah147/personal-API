@@ -15,8 +15,8 @@ spec:
     containers:
       - name: tristin-api
         image: us-docker.pkg.dev/my-devops-team-404512/tristin-api/api-tests
-         ports:
-           - containerPort: 3000
+        ports:
+          - containerPort: 3000
         resources:
           limits:
             cpu: ".5"
